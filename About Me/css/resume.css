@@ -1,0 +1,90 @@
+/* Resume Styles */
+.resume {
+  padding: 100px 0;
+}
+
+.heading {
+  margin: 40px 0 50px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(5, 214, 5);
+}
+
+.darkmode .heading{
+  color: rgb(5, 214, 5);
+}
+
+.experience-title, .education-title, .skills-title {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(5, 214, 5);
+}
+
+.experience {
+  display: flex;
+  justify-content: space-around;
+} 
+
+.experience-info__card, .education-info__card {
+  margin: 15px 0 50px;
+  display: flex;
+  gap: 25px;
+}
+
+.experience-info__title p, .education-info__title p, .skills li {
+  width: 350px;
+  margin-top: 10px;
+}
+
+.education {
+  margin: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 90px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.skills {
+  padding: 50px 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-info__cards li{
+  line-height: 25px;
+  list-style-type: lower;
+}
+/* /Resume Styles */
+
+/* Media Styles */
+@media (max-width: 1200px) {
+  /* Resume Styles */
+  .resume {
+    padding: 100px 0 10px;
+  }
+
+  .experience, .education, .skills,
+  .experience-info__card, .education-info__card, .skills-info__card {
+    margin: 15px 0 30px;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .experience-info__title p, .education-info__title p, .skills li {
+    width: 100%;
+    padding:0 5px;
+  }
+
+  .education{
+    padding: 50px 0;
+  }
+
+  .skills {
+    padding: 25px;
+  }
+  /* /Resume Styles */
+}
+/* /Media Styles */

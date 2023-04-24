@@ -1,0 +1,85 @@
+/* Contact Styles */
+:root{
+    --color:#9176FF;
+    --dark-color:#2b2b2b;
+    --dark-icon-color:#fff;
+    --light-color:#f7f7f7;
+    --light-color-icon:#FFDE59;
+  }
+
+.darkmode .contact-card__email a{
+    color: var(--dark-icon-color);
+}
+
+.contact{
+    margin: 150px 0;
+}
+
+.contact-cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-card h1{
+    margin: 0 0 25px;
+    font-size: 45px;
+    color: rgb(5, 214, 5);
+}
+
+.contact-card__phone{
+    margin: 20px 0;
+}
+
+.contact-card__email a{
+    color: #111222;
+}
+
+form input{
+    border: 1px dashed green;
+    outline: none;
+    width: 20rem;
+    background-color:aliceblue;
+    margin-bottom:15px;
+    padding: 13px 10px;
+    transition: .3s;
+}
+
+.contact-btn{
+    font-size: 22px;
+    padding: 5px 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--light-color);
+    background-color: var(--color);
+    transition: .5s;
+}
+
+.contact-btn:hover{
+    background-color: rgb(5, 207, 5);
+    border-radius: 5px 25px 5px 25px;
+}
+/* /Contact Styles */
+
+/* Media Styles */
+@media (max-width:990px){
+    /* Contact Section */
+    .contact{
+        margin: 150px 20px 70px;
+    }
+
+    .contact-cards{
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .contact-card{
+        text-align:center;
+    }
+
+    form input{
+        width: 100%;
+    }
+    /* /Contact Section */
+}
+/* /Media Styles */
